@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+body {
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    min-height: 98vh;
+    background: #f8f8f8;
+}
+
+body.home {
+    background: url(./assets/images/bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+/*--------------navigation-------------*/
+
+.navbar {
+    padding: 0;
+}
+
+.navbar>* {
+    vertical-align: top;
+}
+
+.navbar>.col-xl-3 {
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 7px 15px 0 #333333;
+}
+
+.navbar-brand {
+    background: url(./assets/images/logo.png) no-repeat center center;
+    background-size: contain;
+    margin: 0;
+    width: 100%;
+    height: 96px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.navbar .link1 {
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.navbar .link1 a {
+    color: black;
+    position: relative;
+}
+
+.navbar .link1 ul:nth-child(2) {
+    background: white;
+}
+
+.navbar .link1 ul:nth-child(2) a {
+    color: #62b900;
+}
+
+.navbar .link2 ul {
+    background: #62b900;
+    width: 100%;
+}
+
+.navbar .link2 a.nav-link {
+    color: white;
+}
+
+.navbar .link2 li.nav-item:hover {
+    background-color: #eee;
+}
+
+.navbar .link2 a.nav-link:hover {
+    color: #62b900;
+}
+
+
+/*--------------home-banner-------------*/
+
+.home-banner .jumbotron {
+    background: none;
+    font-size: 36px;
+}
+
+.home-banner .jumbotron>* {
+    color: white;
+}
+
+.home-banner .jumbotron img {
+    max-width: 160px;
+    border-radius: 50%;
+    height: auto;
+    border: #FFF solid 5px;
+    box-shadow: 5px 5px 10px 0 #000000;
+}
+
+.home-banner .jumbotron p {
+    margin: 30px 0 70px;
+}
+
+.home-banner .jumbotron h1 {
+    font-size: 72px;
+}
+
+
+/*--------------bookingEngine-------------*/
+
+#bookingEngine {
+    clear: both;
+}
+
+#bookingEngine .title {
+    background: white;
+}
+
+#bookingEngine .title h1 {
+    margin: 0;
+    padding: 0;
+    color: #401200;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+#bookingEngine>.form-inlines>.col-xl-10 {
+    vertical-align: bottom;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 34px 15px;
+}
+
+#bookingEngine>.form-inlines>.col-xl-10 input[type="text"] {
+    background: none;
+    border: 0;
+    border-bottom: 1px #CCCCCC solid;
+    border-radius: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+#bookingEngine>.form-inlines>.col-xl-10 button {
+    background: #62b900;
+    border: 0;
+    border-radius: 0;
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#bookingEngine>.form-inlines>.col-xl-10 .form-group {
+    margin-bottom: 0;
+}
+
+.form-inlines {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*--------------pageHeader-------------*/
+
+.pageHeader {
+    padding: 15px;
+    display: block;
+}
+
+.pageHeader h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.pageHeader ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pageHeader ul li {
+    padding-left: 25px;
+    position: relative
+}
+
+.pageHeader ul li:before {
+    content: '>>';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #CCC;
+}
+
+.pageHeader ul li:first-child {
+    padding-left: 0;
+}
+
+.pageHeader ul li:first-child:before {
+    display: none;
+}
+
+.pageHeader ul a {
+    color: #CCC;
+}
+
+.pageHeader ul li.active a {
+    color: #ffffff;
+}
+
+.pageHeader ul a:hover {
+    text-decoration: underline;
+}
+
+
+/*--------------pageContent-------------*/
+
+.pageWrap {
+    background: #f8f8f8;
+    padding: 15px 0;
+}
+
+
+/*--------------carousel-------------*/
+
+.carousel {
+    border: #CCC solid 1px;
+    padding: 7px;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+
+/*--------------availability-------------*/
+
+.availability {
+    background: #E8FFEB;
+    border: #CCCCCC solid 1px;
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.availability div {
+    padding-right: 0;
+}
+
+.availability p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------sidebar-------------*/
+
+.sidebar {
+    padding: 0 0 0 30px;
+}
+
+.sidebar section {
+    margin-top: 30px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 5px 0 #CCC;
+}
+
+.sidebar section:first-child {
+    margin-top: 0;
+}
+
+.sidebar h2 {
+    margin: 0;
+    padding: 0 15px;
+    line-height: 48px;
+    border-bottom: #CCC solid 1px;
+}
+
+.sidebar .details {
+    padding: 15px;
+}
+
+.sidebar .details ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 30px;
+}
+
+.sidebar .details ul a {
+    color: #666;
+    position: relative;
+    padding-left: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar .details ul a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    border-bottom: #91e591 solid 1px;
+    border-right: #91e591 solid 1px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.sidebar .details ul li.active a,
+.sidebar .details ul a:hover {
+    color: #000000;
+}
+
+.sidebar .details ul li.active a:before,
+.sidebar .details ul a:hover:before {
+    border-color: #d43f3a;
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+    #bookingEngine .title {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    #bookingEngine>.form-inlines>.col-xl-10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 100%;
+        max-width: 1600px;
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) {
+    #navbarNavDropdown {
+        display: block !important
+    }
+    .navbar>.col-xl-9 {
+        padding: 0
+    }
+    .navbar .link2 {
+        margin-bottom: 36px;
+    }
+    .pageHeader {
+        padding: 30px 15px;
+    }
+    .pageWrap {
+        padding: 30px;
+    }
+    .pageContent {
+        box-shadow: 0 0 10px 0 #CCC;
+        padding: 30px;
+        background: white;
+    }
+    .availability input {
+        max-width: 155px;
+    }
+}
+
+@media (max-width:1600px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .home-banner .jumbotron {
+        font-size: 24px;
+    }
+    .home-banner .jumbotron h1 {
+        font-size: 48px;
+    }
+    #bookingEngine>.form-inlines>.col-xl-10 {
+        padding: 20px 15px;
+    }
+    #bookingEngine>.form-inlines>.col-xl-10 input {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        min-width: 290px;
+    }
+    .navbar>.col-xl-3 {
+        padding-right: 0;
+    }
+    .navbar-brand {
+        background: url(./assets/images/logo.png) no-repeat left center;
+        background-size: contain;
+        width: 100%;
+        height: 60px;
+    }
+    .home-banner .jumbotron {
+        font-size: 18px;
+    }
+    .home-banner .jumbotron h1 {
+        font-size: 36px;
+    }
+}
+
+@media (min-height:600px) {
+    body.home app-root>.container {
+        height: 100vh;
+    }
+    #bookingEngine {
+        position: absolute;
+        bottom: 0;
+    }
+}

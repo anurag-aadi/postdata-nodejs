@@ -1,0 +1,7 @@
+<div class="container" *ngFor="let page of pages">
+    <h1>{{page.page_title}}</h1>
+    <ul class="list-inline hidden-xs-down">
+        <li class="list-inline-item"><a href="index.html">Home</a></li>
+        <li class="list-inline-item active"><a href="/article/{{page.page_id}}">{{page.page_title}}</a></li>
+    </ul>
+</div>
